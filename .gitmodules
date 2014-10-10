@@ -1,0 +1,6 @@
+[submodule "lib/fullPage.js"]
+	path = lib/fullPage.js
+	url = https://github.com/alvarotrigo/fullPage.js.git
+[submodule "lib/PHPuiGradients"]
+	path = lib/PHPuiGradients
+	url = git@github.com:cecilomar/PHPuiGradients.git
