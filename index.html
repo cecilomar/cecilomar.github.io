@@ -3,10 +3,121 @@
 <head>
 <meta charset="UTF-8">
 <title>CecilomarDev</title>
-</head>
 
+<link rel="stylesheet" type="text/css" href="./lib/fullPage.js/jquery.fullPage.css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="./lib/fullPage.js/vendors/jquery.easings.min.js"></script>
+<script type="text/javascript" src="./lib/fullPage.js/vendors/jquery.slimscroll.min.js"></script>
+<script type="text/javascript" src="./lib/fullPage.js/jquery.fullPage.js"></script>
+<script type="text/javascript">	
+$(document).ready(function() {
+    $('#fullpage').fullpage();
+});
+</script>
+
+<link rel="stylesheet" type="text/css" href="http://test.cecilomar.com/PHPuiGradients/cecilomar_gh_io.php" />
+<style>
+@import url(http://fonts.googleapis.com/css?family=Lato:100);
+
+*{
+	margin: 0px;
+	padding: 0px;
+	color: black;
+}
+
+body{
+	font-family: Arial, sans-serif, Gotham, "Helvetica Neue", Helvetica;
+	font-size: 18px;
+}
+
+header{
+	background-color: #000000;
+	color: #DDDDDD;
+}
+h1,h2,h3,h4,h5{
+	font-family: 'Lato', sans-serif;
+}
+h1{
+	font-size: 100px;
+	text-decoration:none;
+}
+a{
+
+	color: red;
+}
+
+[data-anchor="Menu"] a{
+	text-decoration:none;
+	font-size: 50px;
+	color: black;
+	font-family: 'Lato', sans-serif;
+}
+[data-anchor="Menu"] a:hover{
+	color:red;
+}
+
+header div#header{
+	max-width: 800px;
+	margin: 0px auto;
+}
+
+/* This is for fullpage.js sections */
+div.section{
+	text-align: center;
+	border: 20px solid #000000;
+}
+
+.section h1, .section p{
+	background-color: rgba(255,255,255,0.50);
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+
+
+
+</style>
+
+</head>
 <body>
-CecilomarDev is Under Construction.
+
+<!--
+<header>
+	<div id="header">
+		CecilomarDev is Under Construction.
+		This will be the main menu.
+	</div>
+</header>
+-->
+<div id="fullpage">
+    <div class="section" data-anchor="Menu">
+    	<h1><img src="//cecilomar.com/images/logos/cecilomar_100.jpg" alt="[logo]" width="100" height="100"/>CecilomarDev
+   		</h1>
+    	<p><a href="#PHPuiGradients">PHPuiGradients</a> <a href="#CSSCompressor">CSSCompressor</a></p>
+	</div>
+    <div class="section" data-anchor="PHPuiGradients"><h1>PHPuiGradients</h1>
+    	<p>PHP implementation of uiGradients.json</p>
+		
+		
+		
+		
+		<div class="slide" data-anchor="info">
+			<p>Info Here...</p>
+		</div>
+    <div class="slide" data-anchor="install">Installation</div>
+		
+		
+	
+	</div>
+    <div class="section" data-anchor="CSSCompressor"><h1>CSSCompressor</h1>
+    	<p>Compress your CSS on the fly with PHP</p>
+    </div>
+    <div class="section" data-anchor="Footer">
+    	<h1>Contact Me</h1>
+    	<p><a href="mailto:info@cecilomar.com" title="I really don't care about robots spamming me.">info@cecilomar.com</a></p>
+    </div>
+</div>
+
 </body>
 
 </html>
