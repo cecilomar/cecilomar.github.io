@@ -1,9 +1,3 @@
 [submodule "lib/fullPage.js"]
 	path = lib/fullPage.js
 	url = https://github.com/alvarotrigo/fullPage.js.git
-[submodule "lib/PHPuiGradients"]
-	path = lib/PHPuiGradients
-	url = git@github.com:cecilomar/PHPuiGradients.git
-[submodule "lib/6330907"]
-	path = lib/compressHTML
-	url = https://gist.github.com/6330907.git
