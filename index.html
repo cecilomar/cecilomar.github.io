@@ -11,7 +11,7 @@
 <script type="text/javascript" src="./lib/fullPage.js/jquery.fullPage.js"></script>
 <script type="text/javascript">	
 $(document).ready(function() {
-    $('#fullpage').fullpage();
+	 $('#fullpage').fullpage();
 });
 </script>
 
@@ -61,10 +61,67 @@ header div#header{
 	margin: 0px auto;
 }
 
+
+
+.gitbtn {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
+	background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background-color:#ededed;
+	-webkit-border-top-left-radius:42px;
+	-moz-border-radius-topleft:42px;
+	border-top-left-radius:42px;
+	-webkit-border-top-right-radius:42px;
+	-moz-border-radius-topright:42px;
+	border-top-right-radius:42px;
+	-webkit-border-bottom-right-radius:42px;
+	-moz-border-radius-bottomright:42px;
+	border-bottom-right-radius:42px;
+	-webkit-border-bottom-left-radius:42px;
+	-moz-border-radius-bottomleft:42px;
+	border-bottom-left-radius:42px;
+	text-indent:0px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	color:#777777;
+	font-family:arial;
+	font-size:18px;
+	font-weight:bold;
+	font-style:normal;
+	height:35px;
+	line-height:35px;
+	width:200px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #ffffff;
+}
+.gitbtn:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
+	background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+	background-color:#dfdfdf;
+}
+.gitbtn:active {
+	position:relative;
+	top:1px;
+}
+
+
+
+
+
+
+
+
+
+
 /* This is for fullpage.js sections */
 div.section{
 	text-align: center;
-	border: 20px solid #000000;
+	border: 1px solid #000000;
 }
 
 .section h1, .section p{
@@ -73,49 +130,32 @@ div.section{
 	padding-bottom: 5px;
 }
 
-
-
-
 </style>
 
 </head>
 <body>
 
-<!--
-<header>
-	<div id="header">
-		CecilomarDev is Under Construction.
-		This will be the main menu.
-	</div>
-</header>
--->
 <div id="fullpage">
-    <div class="section" data-anchor="Menu">
-    	<h1><img src="//cecilomar.com/images/logos/cecilomar_100.jpg" alt="[logo]" width="100" height="100"/>CecilomarDev
-   		</h1>
-    	<p><a href="#PHPuiGradients">PHPuiGradients</a> <a href="#CSSCompressor">CSSCompressor</a></p>
+	 <div class="section" data-anchor="Menu">
+	 	<h1><img src="//cecilomar.com/images/logos/cecilomar_100.jpg" alt="[logo]" width="100" height="100"/>CecilomarDev
+			</h1>
+	 	<p><a href="#PHPuiGradients">PHPuiGradients</a> <a href="#phpMinimize">phpMinimize</a></p>
 	</div>
-    <div class="section" data-anchor="PHPuiGradients"><h1>PHPuiGradients</h1>
-    	<p>PHP implementation of uiGradients.json</p>
-		
-		
-		
-		
-		<div class="slide" data-anchor="info">
-			<p>Info Here...</p>
-		</div>
-    <div class="slide" data-anchor="install">Installation</div>
-		
-		
-	
+	 
+	 <div class="section" data-anchor="PHPuiGradients"><h1>PHPuiGradients</h1>
+	 	<p>PHP implementation of uiGradients.json</p>		
+	 	<div><br/><a class="gitbtn" href="https://github.com/cecilomar/PHPuiGradients" title="PHPuiGradients" target="_blank">Github</a> <a class="gitbtn" href="https://github.com/cecilomar/PHPuiGradients/archive/master.zip" title="PHPuiGradients.zip">Download</a></div>
 	</div>
-    <div class="section" data-anchor="CSSCompressor"><h1>CSSCompressor</h1>
-    	<p>Compress your CSS on the fly with PHP</p>
-    </div>
-    <div class="section" data-anchor="Footer">
-    	<h1>Contact Me</h1>
-    	<p><a href="mailto:info@cecilomar.com" title="I really don't care about robots spamming me.">info@cecilomar.com</a></p>
-    </div>
+
+	 <div class="section" data-anchor="phpMinimize"><h1>phpMinimize</h1>
+	 	<p>Minimize (Compress) HTML, XML, CSS and JS.</p>
+	 	<div><br/><a class="gitbtn" href="https://github.com/cecilomar/phpMinimize" title="phpMinimize" target="_blank">Github</a> <a class="gitbtn" href="https://github.com/cecilomar/phpMinimize/archive/master.zip" title="phpMinimize.zip">Download</a></p>
+	 </div>
+
+	 <div class="section" data-anchor="Footer">
+	 	<h1>Contact Me</h1>
+	 	<p><a href="mailto:info@cecilomar.com" title="I really don't care about robots spamming me.">info@cecilomar.com</a></div>
+	 </div>
 </div>
 
 </body>
