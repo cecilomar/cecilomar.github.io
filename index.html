@@ -15,7 +15,7 @@ $(document).ready(function() {
 });
 </script>
 
-<link rel="stylesheet" type="text/css" href="http://test.cecilomar.com/PHPuiGradients/cecilomar_gh_io.php" />
+<link rel="stylesheet" type="text/css" href="http://test.cecilomar.com/PHPuiGradients/cecilomar.github.io.php" />
 <style>
 @import url(http://fonts.googleapis.com/css?family=Lato:100);
 
@@ -97,6 +97,7 @@ header div#header{
 	text-decoration:none;
 	text-align:center;
 	text-shadow:1px 1px 0px #ffffff;
+	margin-top: 10px;
 }
 .gitbtn:hover {
 	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
@@ -121,7 +122,6 @@ header div#header{
 /* This is for fullpage.js sections */
 div.section{
 	text-align: center;
-	border: 1px solid #000000;
 }
 
 .section h1, .section p{
@@ -134,27 +134,31 @@ div.section{
 
 </head>
 <body>
-
 <div id="fullpage">
-	 <div class="section" data-anchor="Menu">
-	 	<h1><img src="//cecilomar.com/images/logos/cecilomar_100.jpg" alt="[logo]" width="100" height="100"/>CecilomarDev
-			</h1>
-	 	<p><a href="#PHPuiGradients">PHPuiGradients</a> <a href="#phpMinimize">phpMinimize</a></p>
+	 <div class="section" data-anchor="Home">
+	 	<h1><img src="//cecilomar.com/images/logos/cecilomar_100.jpg" alt="[logo]" width="100" height="100"/>CecilomarDev</h1>
+	 	<div>
+			<a class="gitbtn" href="#PHPuiGradients">PHPuiGradients</a>
+			<a class="gitbtn" href="#phpMinimize">phpMinimize</a>
+			<a class="gitbtn" href="#Contact">Contact Me</a>
+		</div>
 	</div>
 	 
-	 <div class="section" data-anchor="PHPuiGradients"><h1>PHPuiGradients</h1>
+	 <div class="section" data-anchor="PHPuiGradients">
+	 	<h1>PHPuiGradients</h1>
 	 	<p>PHP implementation of uiGradients.json</p>		
-	 	<div><br/><a class="gitbtn" href="https://github.com/cecilomar/PHPuiGradients" title="PHPuiGradients" target="_blank">Github</a> <a class="gitbtn" href="https://github.com/cecilomar/PHPuiGradients/archive/master.zip" title="PHPuiGradients.zip">Download</a></div>
+	 	<div><a class="gitbtn" href="https://github.com/cecilomar/PHPuiGradients" title="PHPuiGradients" target="_blank">Github</a> <a class="gitbtn" href="https://github.com/cecilomar/PHPuiGradients/archive/master.zip" title="PHPuiGradients-master.zip">Download</a></div>
 	</div>
 
-	 <div class="section" data-anchor="phpMinimize"><h1>phpMinimize</h1>
-	 	<p>Minimize (Compress) HTML, XML, CSS and JS.</p>
-	 	<div><br/><a class="gitbtn" href="https://github.com/cecilomar/phpMinimize" title="phpMinimize" target="_blank">Github</a> <a class="gitbtn" href="https://github.com/cecilomar/phpMinimize/archive/master.zip" title="phpMinimize.zip">Download</a></p>
+	 <div class="section" data-anchor="phpMinimize">
+	 	<h1>phpMinimize</h1>
+	 	<p>Minimize or Compress HTML, XML, CSS, JS, etc.</p>
+	 	<div><a class="gitbtn" href="https://github.com/cecilomar/phpMinimize" title="phpMinimize" target="_blank">Github</a> <a class="gitbtn" href="https://github.com/cecilomar/phpMinimize/archive/master.zip" title="phpMinimize-master.zip">Download</a></div>
 	 </div>
 
-	 <div class="section" data-anchor="Footer">
+	 <div class="section" data-anchor="Contact">
 	 	<h1>Contact Me</h1>
-	 	<p><a href="mailto:info@cecilomar.com" title="I really don't care about robots spamming me.">info@cecilomar.com</a></div>
+	 	<div><a class="gitbtn" href="mailto:info@cecilomar.com" title="I really don't care about robots spamming me.">info@cecilomar.com</a></div>
 	 </div>
 	 
 </div>
