@@ -11,7 +11,10 @@
 <script type="text/javascript" src="./lib/fullPage.js/jquery.fullPage.js"></script>
 <script type="text/javascript">	
 $(document).ready(function() {
-	 $('#fullpage').fullpage();
+	$('#fullpage').fullpage({
+		loopBottom: true,
+		loopTop: true,
+	});
 });
 </script>
 
@@ -36,9 +39,9 @@ header{
 }
 h1,h2,h3,h4,h5{
 	font-family: 'Lato', sans-serif;
+	text-shadow: 1px 1px hsla(0,0%,0%,0.50);
 }
 h1{
-	font-size: 100px;
 	text-decoration:none;
 }
 a{
@@ -46,78 +49,26 @@ a{
 	color: red;
 }
 
-[data-anchor="Menu"] a{
-	text-decoration:none;
-	font-size: 50px;
+.gitbtn{
+	text-decoration: none;
 	color: black;
 	font-family: 'Lato', sans-serif;
+	font-weight: bold;
+	margin-top: 25px;
+	margin-right: 2px;
+	padding: 2px;
+	margin-left: 2px;
+	clear: both;
+	color: #000000;
+	text-decoration: none;
+	text-shadow: 1px 1px hsla(0,0%,0%,0.50);
+	/* [disabled]background-color: #C0C0C0; */
+	width: 200px;
 }
-[data-anchor="Menu"] a:hover{
+.gitbtn:hover{
 	color:red;
+	text-decoration:overline;
 }
-
-header div#header{
-	max-width: 800px;
-	margin: 0px auto;
-}
-
-
-
-.gitbtn {
-	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
-	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
-	box-shadow:inset 0px 1px 0px 0px #ffffff;
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
-	background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
-	background-color:#ededed;
-	-webkit-border-top-left-radius:42px;
-	-moz-border-radius-topleft:42px;
-	border-top-left-radius:42px;
-	-webkit-border-top-right-radius:42px;
-	-moz-border-radius-topright:42px;
-	border-top-right-radius:42px;
-	-webkit-border-bottom-right-radius:42px;
-	-moz-border-radius-bottomright:42px;
-	border-bottom-right-radius:42px;
-	-webkit-border-bottom-left-radius:42px;
-	-moz-border-radius-bottomleft:42px;
-	border-bottom-left-radius:42px;
-	text-indent:0px;
-	border:1px solid #dcdcdc;
-	display:inline-block;
-	color:#777777;
-	font-family:arial;
-	font-size:18px;
-	font-weight:bold;
-	font-style:normal;
-	height:35px;
-	line-height:35px;
-	width:200px;
-	text-decoration:none;
-	text-align:center;
-	text-shadow:1px 1px 0px #ffffff;
-	margin-top: 10px;
-}
-.gitbtn:hover {
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
-	background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
-	background-color:#dfdfdf;
-}
-.gitbtn:active {
-	position:relative;
-	top:1px;
-}
-
-
-
-
-
-
-
-
-
 
 /* This is for fullpage.js sections */
 div.section{
@@ -136,29 +87,32 @@ div.section{
 <body>
 <div id="fullpage">
 	 <div class="section" data-anchor="Home">
-	 	<h1><img src="//cecilomar.com/images/logos/cecilomar_100.jpg" alt="[logo]" width="100" height="100"/>CecilomarDev</h1>
-	 	<div>
+	 	<h1><img src="//cecilomar.com/images/logos/cecilomar_50.jpg" alt="[logo]" width="25" height="25"/>CecilomarDev</h1>
+	 	<p>
 			<a class="gitbtn" href="#PHPuiGradients">PHPuiGradients</a>
 			<a class="gitbtn" href="#phpMinimize">phpMinimize</a>
 			<a class="gitbtn" href="#Contact">Contact Me</a>
-		</div>
+		</p>
 	</div>
 	 
 	 <div class="section" data-anchor="PHPuiGradients">
 	 	<h1>PHPuiGradients</h1>
 	 	<p>PHP implementation of uiGradients.json</p>		
-	 	<div><a class="gitbtn" href="https://github.com/cecilomar/PHPuiGradients" title="PHPuiGradients" target="_blank">Github</a> <a class="gitbtn" href="https://github.com/cecilomar/PHPuiGradients/archive/master.zip" title="PHPuiGradients-master.zip">Download</a></div>
+	 	<p><a class="gitbtn" href="https://github.com/cecilomar/PHPuiGradients" title="PHPuiGradients" target="_blank">Github</a> <a class="gitbtn" href="https://github.com/cecilomar/PHPuiGradients/archive/master.zip" title="PHPuiGradients-master.zip">Download</a></p>
+		
 	</div>
 
 	 <div class="section" data-anchor="phpMinimize">
 	 	<h1>phpMinimize</h1>
-	 	<p>Minimize or Compress HTML, XML, CSS, JS, etc.</p>
-	 	<div><a class="gitbtn" href="https://github.com/cecilomar/phpMinimize" title="phpMinimize" target="_blank">Github</a> <a class="gitbtn" href="https://github.com/cecilomar/phpMinimize/archive/master.zip" title="phpMinimize-master.zip">Download</a></div>
+	 	<p>Minimize or Compress HTML, XML, CSS, JS, etc.
+	 	<p><a class="gitbtn" href="https://github.com/cecilomar/phpMinimize" title="phpMinimize" target="_blank">Github</a> <a class="gitbtn" href="https://github.com/cecilomar/phpMinimize/archive/master.zip" title="phpMinimize-master.zip">Download</a></p>
+</p>
 	 </div>
 
 	 <div class="section" data-anchor="Contact">
 	 	<h1>Contact Me</h1>
-	 	<div><a class="gitbtn" href="mailto:info@cecilomar.com" title="I really don't care about robots spamming me.">info@cecilomar.com</a></div>
+		<p><a class="gitbtn" href="mailto:info@cecilomar.com" title="I really don't care about robots spamming me.">info@cecilomar.com</a></p>
+
 	 </div>
 	 
 </div>
